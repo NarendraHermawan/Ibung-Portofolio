@@ -42,7 +42,7 @@
 			<ul>
 				<li><a href="#home" class="a">Home</a></li>
 				<li><a href="#about" class="a">About</a></li>
-				<li><a href="#portfolio" class="a">Portfolio</a></li>
+				<li><a href="#hoby" class="a">Projects</a></li>
 				<li><a href="#contact" class="a">Contact</a></li>
 			</ul>
 		</div>
@@ -63,7 +63,7 @@
 		<!-- call particles js -->
 		<div id="particles-js">
 			<div class="landing-tittle">
-				<h3>Welcome to my website</h3>
+				<h3>Welcome to my portfolio</h3>
 						<!-- call typed js -->
 					<div class="type">
 						<span class="typed"></span>
@@ -119,14 +119,18 @@
 			</div>
 		</div>
 	</div>
-
+	
 	<!-- hoby -->
-	<div class="hoby">
+	<div class="hoby" id="hoby">
 		<h2 class="tittle">Projects</h2><hr>
 		<div class="row">
 			<div class="col-sm-6 col-xs-12 col-md-4">
 				<div class="hoby-1" data-aos="fade-right">
+
+					<a href="kiero.html">
 					<i class="fas fa-book"></i>
+					</a>
+
 					<h5><a href="kiero.html">Kiero</a></h5>
 					<p>Kiero is a brand and also a movement media that concerns about trends and social issues among the youth.
 					</p>
@@ -134,20 +138,47 @@
 			</div>
 			<div class="col-sm-6 col-xs-12 col-md-4">
 				<div class="hoby-1" data-aos="fade-down">
+
+					<a href="kiero.html">
 					<i class="fas fa-code"></i>
+					</a>
+
 					<h5><a href="kiero.html">NMS</a></h5>
 					<p>Notary Management System is a management system that digitized and integrated the general workflow of each notary work component.
 					</p>
 				</div>
 			</div>
+
 			<div class="col-sm-6 col-xs-12 col-md-4">
 				<div class="hoby-1" data-aos="fade-left">
-					<i class="fas fa-hourglass-start"></i>
-					<h5>Comming Soon!</h5>
-					<p>Stay tuned for the big reveal. Prepare to be inspired and witness the art of craftsmanship at its finest!
-					</p>
+					<i id="icon-click" class="fas fa-hourglass-start"></i>
+					<h5 id="text-click">Coming Soon!</h5>
+					<p>Stay tuned for the big reveal. Prepare to be inspired and witness the art of craftsmanship at its finest!</p>
 				</div>
-			</div><!--end col-->
+			</div>
+			
+			
+			<script>
+				// Get the icon element by its ID
+				const icon = document.getElementById('icon-click');
+			
+				// Get the text element by its ID
+				const text = document.getElementById('text-click');
+			
+				// Function to show a pop-up message
+				function showMessage() {
+					alert('Coming soon!');
+				}
+			
+				// Add a click event listener to the icon
+				icon.addEventListener('click', showMessage);
+			
+				// Add a click event listener to the text
+				text.addEventListener('click', showMessage);
+			</script>
+			
+			
+			<!--end col-->
 	
 		</div><!--end row-->
 	</div>
@@ -159,7 +190,7 @@
 				<div class="col-md-3 col-sm-6 col-xs-6">
 					<div class="item">
 						<i class="fas fa-hourglass-half"></i>
-						<h2 class="counter">80</h2>
+						<h2 class="counter">1728</h2>
 						<!--edit-->
 						<p>Hours Worked</p>
 					</div>
@@ -175,7 +206,7 @@
 				<div class="col-md-3 col-sm-6 col-xs-6">
 					<div class="item">
 						<i class="fas fa-users"></i>
-						<h2 class="counter">121</h2>
+						<h2 class="counter">24</h2>
 						<!--edit-->
 						<p>Happy Clients</p>
 					</div>
@@ -183,7 +214,7 @@
 				<div class="col-md-3 col-sm-6 col-xs-6">
 					<div class="item">
 						<i class="fas fa-file-code"></i>
-						<h2 class="counter">230</h2>
+						<h2 class="counter">6</h2>
 						<!--edit-->
 						<p>Projects Finished</p>
 					</div>
@@ -250,65 +281,39 @@
 	<!-- cntact -->
 	<div class="contact" id="contact">
 				<div class="contact-1">
-					<form id="contact-form">
 						<h2 class="tittle">Contact</h2><hr>
-						<div class="row">
-							<div class="col-md-12 col-sm-12">
-								<div class="input">
-									<input type="text" name="" required=""><label>Name*</label>
-								</div>
-							</div>
-							<div class="col-md-12 col-sm-12">
-								<div class="input">
-									<input type="text" name="" required=""><label>Email*</label> <br>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-12 col-sm-12">
-							<div class="input">
-								<input type="tell" name="" required=""><label>Number phone*</label><br>
-							</div>
-						</div>
-						<div class="col-md-12 col-sm-12">
-							<textarea></textarea>
-						</div>
-						<div class="col-md-12 col-sm-12">
-							<button type="button" value="submit">Send</button>
-						</div>
-					</form>
 				</div>
 	</div>
-
+	
 	<!-- chat -->
 	<div class="contact-chat">
 			<div class="row">
 				<div class="col-sm-4 col-md-4 col-xs-12">
 					<a href="">
 						<div class="chat" data-aos="fade-down">
-							<i class="fas fa-phone"></i>
+							<a href="https://api.whatsapp.com/send?phone=6281384323745"><i class="fab fa-whatsapp"></i></a>
 							<h6>+6281384323745</h6>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 						</div>
 					</a>
 				</div><!-- end col -->
 				<div class="col-sm-4 col-md-4 col-xs-12">
-					<a href="">
+					<a href="mailto:muhammad.narendra@ui.ac.id">
 						<div class="chat" data-aos="fade-down">
 							<i class="fas fa-at"></i>
-							<h6>Muhammad.Narendra@ui.ac.id</h6>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+							<h6>muhammad.narendra@ui.ac.id</h6>
 						</div>
 					</a>
 				</div><!-- end col -->
 				<div class="col-sm-4 col-md-4 col-xs-12">
-					<a href="">
+					<a href="https://www.google.com/maps/place/DKI+Jakarta, Jakarta+Selatan, Tebet, Tebet+Timur, 12820">
 						<div class="chat" data-aos="fade-down">
-								<i class="fas fa-map-marked-alt"></i>
-								<h6>Jakarta,Indonesia</h6>
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+							<i class="fas fa-map-marked-alt"></i>
+							<h6>Jakarta, Indonesia</h6>
 						</div>
 					</a>
-				</div><!-- end col -->
+				</div>
+				
+				<!-- end col -->
 			</div><!-- end-row -->
 	</div>
 
@@ -316,9 +321,9 @@
 	<div class="footer">
 		<h4>&copy; all right reserved by Narendra Hermawan</h4>
 		<div class="social-media">
-			<a href=""><i class="fab fa-facebook-f"></i></a>
-			<a href=""><i class="fab fa-dribbble"></i></a>
-			<a href=""><i class="fab fa-twitter"></i></a>
+			<a href="https://www.linkedin.com/in/narendra-hermawan-132629208/"><i class="fab fa-linkedin-in"></i></a>
+			<a href="https://api.whatsapp.com/send?phone=6281384323745"><i class="fab fa-whatsapp"></i></a>
+			<a href="https://www.instagram.com/ibungnarendra"><i class="fab fa-instagram"></i></a>
 		</div>
 	</div>
 

@@ -429,9 +429,6 @@ hr{
 .contact
 {
 	width: 100%;
-	margin-top: 100px;
-	margin-bottom: 200px;
-	padding: 30px;
 	overflow: hidden;
 }
 .contact h2
@@ -440,31 +437,7 @@ hr{
 	margin-bottom: 20px;
 	margin-top: -10px;
 }
-.contact form
-{
-	width: 80%;
-	margin: auto;
-}
-.contact form .input
-{
-	position: relative;
-}
-.contact form input
-{
-	border: none;
-	outline: none;
-	margin-bottom: 20px;
-	background: transparent;
-	border-bottom: 2px solid rgba(0,0,0,.4);
-}
-.contact form input[type="text"]
-{
-	width: 100%;
-}
-.contact form input[type="tell"]
-{
-	width: 100%;
-}
+
 .contact form label
 {
 	position: absolute;
@@ -494,18 +467,7 @@ hr{
 	background: transparent;
 	margin-bottom: 10px;
 }
-.contact button
-{
-	border: none;
-	background: #3385ff;
-	color: #fff;
-	padding: 7px 29px;
-	border-radius: 3px;
-}
-.contact button:hover
-{
-	background: #0052cc;
-}
+
 .contact-chat .chat
 {
 	position: relative;
@@ -523,15 +485,7 @@ hr{
 	left: 50%;
 	transform: translateX(-50%);
 }
-.contact-chat .chat:hover i
-{
-	color: #ff3300;
-}
-.contact-chat
-{
-	padding-top: 100px;
-	background: #fafafa;
-}
+
 .contact-chat .chat
 {
 	width: 99%;
@@ -1290,5 +1244,4 @@ nav ul li a:hover{
 	}
 	
 }
-
 /* ******************* end all */
