@@ -1838,9 +1838,7 @@ nav ul li a:hover{
 	object-fit: cover;
 	object-position: center;
 	width: 100%;
-	max-width: 394px;
-	margin-top: 58.5px;
-	align-self: center;
+	align-self: stretch;
   }
   .column-13 {
 	display: flex;
